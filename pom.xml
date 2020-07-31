@@ -16,6 +16,9 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <screw-version>1.0.2</screw-version>
+        <mysql-version>8.0.17</mysql-version>
+        <HikariCP-version>3.4.5</HikariCP-version>
     </properties>
 
     <dependencies>
@@ -38,7 +41,18 @@
         <dependency>
             <groupId>cn.smallbun.screw</groupId>
             <artifactId>screw-core</artifactId>
-            <version>1.0.2</version>
+            <version>${screw-version}</version>
+        </dependency>
+        <!-- HikariCP -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${HikariCP-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-version}</version>
         </dependency>
     </dependencies>
 
